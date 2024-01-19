@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddData"
+    android:background="#DDD5D5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/heading"
+        android:id="@+id/heading01">
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/baseline_keyboard_backspace_24"
+            android:id="@+id/back"
+            android:layout_centerVertical="true"
+            android:background="@color/purple" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="serif"
+            android:text="Add Data"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/body01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/invest01"
+        android:layout_below="@id/heading01">
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ip1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaction Type:"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:id="@+id/textView"
+            android:layout_marginLeft="15dp"
+            />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/input01"
+            android:layout_marginTop="10dp">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credit"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/cardview_dark_background"
+                android:id="@+id/rb1"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Debit"
+                android:textSize="15dp"
+
+                android:layout_marginTop="5dp"
+                android:textColor="@color/cardview_dark_background"
+                android:id="@+id/rb2"
+                android:layout_toRightOf="@id/rb1"/>
+        </RadioGroup>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/input01"
+            android:background="@color/cardview_dark_background"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/line1"
+            android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/ip2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ip1"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="serif"
+                android:text="Transaction Method:"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/input02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rb3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="UPI\nPayment"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="15dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/rb3"
+                        android:text="Cash\nPayment"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="15dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/rb4"
+
+                        android:layout_marginTop="5dp"
+                        android:text="Bank\nTo Bank\nPayment"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="15dp" />
+            </RadioGroup>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/input02"
+                android:background="@color/cardview_dark_background"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/line2"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ip3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ip2"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="serif"
+                android:text="Transaction Amount:"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+                <EditText
+                 android:layout_width="100dp"
+                 android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/cardview_dark_background"
+                    android:layout_below="@id/textView3"
+                    android:inputType="number"
+                    android:paddingLeft="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/amt"
+                    />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹"
+                android:textSize="25dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="-40dp"
+                android:layout_toLeftOf="@id/amt"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_below="@id/textView3"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/amt"
+                android:background="@color/cardview_dark_background"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/line3"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/ip4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ip3"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="serif"
+                    android:text="Note:"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/cardview_dark_background"
+                    android:layout_below="@id/textView4"
+                    android:inputType="text"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/desc01"
+                    android:hint="e.g spent for buying at a shop"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/cardview_dark_background"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_below="@id/desc01"
+                    android:id="@+id/line4"
+                    android:layout_marginTop="10dp"/>
+
+            </RelativeLayout>
+        <Button
+            android:id="@+id/add"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/ip4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="serif"
+            android:text="ADD"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        </RelativeLayout>
+        </ScrollView>
+</RelativeLayout>
+</RelativeLayout>

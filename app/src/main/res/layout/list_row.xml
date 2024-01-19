@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/record1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/moreOption">
+    <TextView
+        android:id="@+id/typeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:text="Debit" />
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/typeTextView"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="22dp"
+        android:text="Date "
+        android:textColor="@color/cardview_dark_background" />
+
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateTextView"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="5dp"
+        android:text="Time "
+        android:textColor="@color/cardview_dark_background" />
+
+    <TextView
+        android:id="@+id/methodTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif"
+        android:text="Method"
+        android:textColor="@color/black"
+        android:textSize="17.5dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/amountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:fontFamily="serif"
+        android:text="₹1000"
+        android:textColor="@color/red"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeTextView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="serif"
+        android:text="Note:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello"
+        android:layout_below="@id/timeTextView"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@+id/note"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

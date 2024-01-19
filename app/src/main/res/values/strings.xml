@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Cashmate</string>
+    <string name="str2">
+
+    * Expense trackers are designed to monitor and record various types of expenses, including bills, purchases, and other financial transactions.\n\n
+    * They provide a clear overview of where money is being spent, helping users identify areas where they can cut costs or budget more effectively.</string>
+
+    <string name="str3">*Transaction Recording: Users can input details of their transactions, such as date, amount, category, and description.\n\n
+*Categorization: Expenses are often categorized (e.g., groceries, utilities, entertainment) for better organization and analysis.\n\n
+*Budgeting: Many expense trackers allow users to set budget limits for different categories and receive notifications when they are close to or exceed those limits.\n\n
+*Reports and Analysis: Users can generate reports or visualizations to analyze spending patterns and make informed financial decisions.\n\n
+*Cloud Sync: Some expense trackers offer cloud synchronization, allowing users to access their financial data from multiple devices.</string>
+    <string name="str4">*Some expense trackers integrate with bank accounts and credit cards, automatically importing transactions for easier tracking.</string>
+    <string name="str5">*Helps in budgeting and managing finances effectively.\n\n
+*Provides insights into spending habits.\n\n
+*Facilitates financial goal setting and savings.\n\n</string>
+    <string name="text">You\'ll be logged out of all sessions expect this one to protect your account if anyone is trying to gain access</string>
+    <string name="text2"> Your password must be at least eight characters and should include a combination of numbers, letters and special characters9!$@%)</string>
+
+
+</resources>

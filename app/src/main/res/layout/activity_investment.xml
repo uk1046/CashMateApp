@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InterFace"
+    android:background="#DDD5D5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/heading"
+        android:id="@+id/heading01">
+
+        <ImageView
+            android:id="@+id/set"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/baseline_currency_rupee_24" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Investment"
+            android:layout_toRightOf="@id/set"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            />
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/heading01"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="58dp"
+            android:orientation="vertical"
+            android:id="@+id/heading02"
+            android:background="#DDD5D5">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/heading01"
+                android:scrollbars="none">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/model1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/invest01">
+
+                    <TextView
+                        android:id="@+id/txt01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="serif"
+                        android:text="Create wealth with SIP"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt01"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="serif"
+                        android:text="6 Cr+ SIP investments every month.\nGrow your money with SIP now" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt02"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="START A SIP"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:id="@+id/sip01"/>
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/txt02"
+                        android:background="@color/white"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/baseline_trending_up" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/model2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/model1"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/invest01">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="serif"
+                        android:text="Investment Ideas"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt03"
+                            android:scrollbars="none"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                    <ImageButton
+                        android:id="@+id/idea1"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:scaleType="fitCenter"
+                        android:background="@color/white"
+                        android:src="@drawable/outline_g_mobiledata_badge_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/idea1"
+                        android:layout_marginLeft="26dp"
+                        android:text="Gold\n"
+                        android:id="@+id/i11"/>
+                    <ImageButton
+                        android:id="@+id/idea2"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_toRightOf="@id/idea1"
+                        android:layout_marginLeft="30dp"
+                        android:scaleType="fitCenter"
+                        android:background="@color/white"
+                        android:src="@drawable/baseline_signal_cellular_alt_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/idea2"
+                        android:layout_marginLeft="95dp"
+                        android:text="Top\nCompanies"
+                        android:textAlignment="center"
+                        android:id="@+id/i12"/>
+                    <ImageButton
+                        android:id="@+id/idea3"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_toRightOf="@id/idea2"
+                        android:layout_marginLeft="30dp"
+                        android:scaleType="fitCenter"
+                        android:background="@color/white"
+                        android:src="@drawable/outline_universal_currency_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/idea3"
+                        android:layout_marginLeft="185dp"
+                        android:text="Tax Saving\nFunds"
+                        android:textAlignment="center"
+                        android:id="@+id/i13"/>
+                    <ImageButton
+                        android:id="@+id/idea4"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_toRightOf="@id/idea3"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:scaleType="fitCenter"
+                        android:background="@color/white"
+                        android:src="@drawable/sharp_bubble_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/idea4"
+                        android:layout_marginLeft="280dp"
+                        android:text="Start With\n₹100"
+                        android:textAlignment="center"
+                        android:id="@+id/i14"/>
+                    <ImageButton
+                        android:id="@+id/idea5"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_below="@+id/i11"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:scaleType="fitCenter"
+                        android:background="@color/white"
+                        android:src="@drawable/outline_check_circle_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/idea5"
+                        android:layout_marginLeft="15dp"
+                        android:text="Best SIP\nFunds"
+                        android:id="@+id/i15"
+                        android:textAlignment="center"/>
+                    <ImageButton
+                        android:id="@+id/idea6"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_below="@+id/i12"
+                        android:layout_toRightOf="@id/idea5"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="15dp"
+                        android:scaleType="fitCenter"
+                        android:background="@color/white"
+                        android:src="@drawable/baseline_format_list_numbered_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/idea6"
+                        android:layout_marginLeft="110dp"
+                        android:text="3-in-1\nFunds"
+                        android:textAlignment="center"
+                        android:id="@+id/i16"/>
+                    <ImageButton
+                        android:id="@+id/idea7"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_below="@+id/i13"
+                        android:layout_toRightOf="@id/idea6"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="15dp"
+                        android:scaleType="fitCenter"
+                        android:background="@color/white"
+                        android:src="@drawable/baseline_outbox_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/idea7"
+                        android:layout_marginLeft="192dp"
+                        android:text="Trending\nThemes"
+                        android:textAlignment="center"
+                        android:id="@+id/i17"/>
+                    <ImageButton
+                        android:id="@+id/idea8"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_below="@+id/i14"
+                        android:layout_toRightOf="@id/idea7"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="15dp"
+                        android:scaleType="fitCenter"
+                        android:background="@color/white"
+                        android:src="@drawable/baseline_playlist_add_check_circle_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/idea8"
+                        android:layout_marginLeft="275dp"
+                        android:text="High Return\nFunds"
+                        android:textAlignment="center"
+                        android:id="@+id/i18"
+                        android:layout_marginBottom="12dp"/>
+
+                        </RelativeLayout>
+                    </HorizontalScrollView>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/model3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/model2"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/invest01">
+                    <TextView
+                        android:id="@+id/txt04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="serif"
+                        android:text="Top Funds in focus"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/txt05"
+                        android:layout_below="@+id/txt04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:text="Funds ideas to boost your wealth journey"
+                        android:textColor="@color/black"
+                        android:textSize="13.5dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/txt05"
+                        android:layout_marginBottom="15dp">
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="none"
+
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp">
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                >
+                                <RelativeLayout
+                                    android:layout_width="250dp"
+                                    android:layout_height="100dp"
+                                    android:background="@drawable/invest02"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:id="@+id/fund01">
+
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/ig1"
+                                        android:scaleType="fitCenter"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:id="@+id/img1"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="ICICI Mutual Funds"
+                                        android:layout_toRightOf="@id/img1"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"
+                                        android:id="@+id/tv1"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Equity : Value"
+                                        android:layout_below="@id/tv1"
+                                        android:layout_toRightOf="@id/img1"
+                                        android:layout_marginLeft="10dp"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Last 3Y"
+                                        android:layout_below="@+id/img1"
+                                        android:textColor="@color/black"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/tvv1" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="25.92%"
+                                        android:textColor="@color/green"
+                                        android:layout_below="@id/tvv1"
+                                        android:layout_marginLeft="10dp"
+                                        android:id="@+id/tvvv1"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="p.a."
+                                        android:textColor="@color/cardview_dark_background"
+                                        android:layout_below="@id/tvv1"
+                                        android:layout_marginLeft="1dp"
+                                        android:layout_toRightOf="@id/tvvv1"
+                                        android:id="@+id/tvvvv1"/>
+                                    <RelativeLayout
+                                        android:layout_width="1dp"
+                                        android:layout_height="40dp"
+                                        android:background="@color/cardview_dark_background"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="55dp"
+                                        android:id="@+id/line11"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@id/line11"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_below="@id/img1"
+                                        android:text="min Amount"
+                                        android:textColor="@color/black"
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/amt1"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@id/line11"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_below="@id/amt1"
+                                        android:text="₹100"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/black"/>
+
+
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:layout_width="250dp"
+                                    android:layout_height="100dp"
+                                    android:background="@drawable/invest02"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_toRightOf="@id/fund01"
+                                    android:id="@+id/fund02">
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/ig2"
+                                        android:scaleType="fitCenter"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:id="@+id/img2"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="SBI Mutual Funds"
+                                        android:layout_toRightOf="@id/img2"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"
+                                        android:id="@+id/tv2"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Equity : Contra"
+                                        android:layout_below="@id/tv2"
+                                        android:layout_toRightOf="@id/img2"
+                                        android:layout_marginLeft="10dp"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Last 3Y"
+                                        android:layout_below="@+id/img2"
+                                        android:textColor="@color/black"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/tvv2" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="31.27%"
+                                        android:textColor="@color/green"
+                                        android:layout_below="@id/tvv2"
+                                        android:layout_marginLeft="10dp"
+                                        android:id="@+id/tvvv2"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="p.a."
+                                        android:textColor="@color/cardview_dark_background"
+                                        android:layout_below="@id/tvv2"
+                                        android:layout_marginLeft="1dp"
+                                        android:layout_toRightOf="@id/tvvv2"
+                                        android:id="@+id/tvvvv2"/>
+                                    <RelativeLayout
+                                        android:layout_width="1dp"
+                                        android:layout_height="40dp"
+                                        android:background="@color/cardview_dark_background"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="55dp"
+                                        android:id="@+id/line12"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@id/line12"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_below="@id/img2"
+                                        android:text="min Amount"
+                                        android:textColor="@color/black"
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/amt2"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@id/line12"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_below="@id/amt2"
+                                        android:text="₹500"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/black"/>
+
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:layout_width="250dp"
+                                    android:layout_height="100dp"
+                                    android:background="@drawable/invest02"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_toRightOf="@id/fund02"
+                                    android:id="@+id/fund03">
+
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/ig3"
+                                        android:scaleType="fitCenter"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:id="@+id/img3"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Quant Midcap Fund"
+                                        android:layout_toRightOf="@id/img3"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"
+                                        android:id="@+id/tv3"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Equity : Midcap"
+                                        android:layout_below="@id/tv3"
+                                        android:layout_toRightOf="@id/img3"
+                                        android:layout_marginLeft="10dp"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Last 3Y"
+                                        android:layout_below="@+id/img3"
+                                        android:textColor="@color/black"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/tvv3" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="32.5%"
+                                        android:textColor="@color/green"
+                                        android:layout_below="@id/tvv3"
+                                        android:layout_marginLeft="10dp"
+                                        android:id="@+id/tvvv3"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="p.a."
+                                        android:textColor="@color/cardview_dark_background"
+                                        android:layout_below="@id/tvv3"
+                                        android:layout_marginLeft="1dp"
+                                        android:layout_toRightOf="@id/tvvv3"
+                                        android:id="@+id/tvvvv3"/>
+                                    <RelativeLayout
+                                        android:layout_width="1dp"
+                                        android:layout_height="40dp"
+                                        android:background="@color/cardview_dark_background"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="55dp"
+                                        android:id="@+id/line13"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@id/line13"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_below="@id/img3"
+                                        android:text="min Amount"
+                                        android:textColor="@color/black"
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/amt3"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@id/line13"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_below="@id/amt3"
+                                        android:text="₹1000"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/black"/>
+
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:layout_width="250dp"
+                                    android:layout_height="100dp"
+                                    android:background="@drawable/invest02"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_toRightOf="@id/fund03"
+                                    android:id="@+id/fund04">
+
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/ig4"
+                                        android:scaleType="fitCenter"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:id="@+id/img4"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="HDFC Mutual Funds"
+                                        android:layout_toRightOf="@id/img4"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"
+                                        android:id="@+id/tv4"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Equity : Small Cap"
+                                        android:layout_below="@id/tv4"
+                                        android:layout_toRightOf="@id/img4"
+                                        android:layout_marginLeft="10dp"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Last 3Y"
+                                        android:layout_below="@+id/img4"
+                                        android:textColor="@color/black"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/tvv4" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="34.99%"
+                                        android:textColor="@color/green"
+                                        android:layout_below="@id/tvv4"
+                                        android:layout_marginLeft="10dp"
+                                        android:id="@+id/tvvv4"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="p.a."
+                                        android:textColor="@color/cardview_dark_background"
+                                        android:layout_below="@id/tvv4"
+                                        android:layout_marginLeft="1dp"
+                                        android:layout_toRightOf="@id/tvvv4"
+                                        android:id="@+id/tvvvv4"/>
+                                    <RelativeLayout
+                                        android:layout_width="1dp"
+                                        android:layout_height="40dp"
+                                        android:background="@color/cardview_dark_background"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="55dp"
+                                        android:id="@+id/line14"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@id/line14"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_below="@id/img4"
+                                        android:text="min Amount"
+                                        android:textColor="@color/black"
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/amt4"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@id/line14"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_below="@id/amt4"
+                                        android:text="₹100"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/black"/>
+
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+    </ScrollView>
+        </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/menu3"
+        android:background="@drawable/footer">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/menu2"
+            android:background="@color/white"
+            >
+            <ImageButton
+                android:id="@+id/btn001"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/baseline_home"
+                android:background="@drawable/buttoncorner"
+                android:scaleType="fitCenter"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+            <ImageButton
+                android:id="@+id/btn002"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/baseline_currency_rupee_24"
+                android:background="@drawable/buttoncorner"
+                android:layout_toRightOf="@id/btn001"
+                android:scaleType="fitCenter"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+            <ImageButton
+                android:id="@+id/btn003"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/baseline_shield"
+                android:layout_toRightOf="@id/btn002"
+                android:scaleType="fitCenter"
+                android:background="@drawable/buttoncorner"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+            <ImageButton
+                android:id="@+id/btn004"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/baseline_settings_24"
+                android:layout_toRightOf="@id/btn003"
+                android:scaleType="fitCenter"
+                android:background="@drawable/buttoncorner"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
